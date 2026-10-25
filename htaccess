@@ -1,0 +1,8 @@
+# Block direct browser access to scanner endpoint
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(GET|HEAD)$ [NC]
+RewriteRule \.php$ - [F,L,NC]
+</IfModule>

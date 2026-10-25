@@ -1,0 +1,24 @@
+# Secrets and private configuration
+/keys/*
+/.env
+/.env.*
+!.env.example
+**/*secret*
+**/*private-key*
+**/*.pem
+**/*.key
+**/credentials*
+**/secrets*
+
+# Local and generated files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.cache
+/vendor/
+/node_modules/
+coverage/
+
+# Allow only the non-secret example file
+!/keys/scanner-secret-key.example.php
